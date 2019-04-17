@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 // @desc Create a Post
 // @access Public
 // Following constructs an object to insert into the DB
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
     const newItem = new Item({
         name: req.body.name
     });
