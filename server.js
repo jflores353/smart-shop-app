@@ -21,6 +21,6 @@ mongoose
 // Use Routes
 app.use('/api/items', items);
 
-const port = process.env.port || 5000; // This setup will allow us to sync up with Heroku
+const port = process.env.port || 5000; // This setup will allow us to sync up with Heroku when ready to deploy
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
