@@ -41,7 +41,7 @@ class ItemModal extends Component {
         this.props.addItem(newItem);
 
         // Close modal
-        this.togggle();
+        this.toggle();
     }
 
     render() {
@@ -83,4 +83,8 @@ class ItemModal extends Component {
     }
 }
 
-export default connect()(ItemModal);
+const mapStateToProps = state => ({
+    item: state.item
+}); 
+
+export default connect(mapStateToProps, { addItem })(ItemModal);
