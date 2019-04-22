@@ -30,7 +30,7 @@ export const addItem = item => dispatch => {
 
 export const deleteItem = id => dispatch => {
     axios
-        .delete(`/api/item/${id}`)
+        .delete(`/api/items/${id}`)
         .then(res =>
             dispatch({
                 type: DELETE_ITEM,
