@@ -69,7 +69,7 @@ class ItemModal extends Component {
                                 onChange={this.onChange}
                             />
                             <Button
-                                color="primary"
+                                color="success"
                                 style= {{ marginTop: '2rem' }} block>
                             Add Item
                             </Button>
