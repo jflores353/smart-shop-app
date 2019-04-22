@@ -1,1 +1,1 @@
-# longevity-app
+# smart-shop-app
