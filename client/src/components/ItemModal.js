@@ -47,7 +47,7 @@ class ItemModal extends Component {
         return(
             <div>
                 <Button
-                    color="dark"
+                    color="success"
                     style={{ marginBottom: '2rem'}}
                     onClick={this.toggle}
                 >Add Item</Button>
@@ -69,7 +69,7 @@ class ItemModal extends Component {
                                 onChange={this.onChange}
                             />
                             <Button
-                                color="dark"
+                                color="primary"
                                 style= {{ marginTop: '2rem' }} block>
                             Add Item
                             </Button>
