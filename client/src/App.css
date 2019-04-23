@@ -19,3 +19,11 @@
     opacity: 0.01; 
     transition: opacity 1000ms ease-in;
 }
+
+.login-form {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+}
