@@ -36,9 +36,7 @@ class ShoppingList extends Component {
                             </CSSTransition>
                         ))}
                     </TransitionGroup>
-
                 </ListGroup>
-
             </Container>
         );
     }

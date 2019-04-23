@@ -7,15 +7,14 @@ import {
     Nav, // Wraps around all the links
     NavItem, // Wraps the NavLink
     NavLink, // Will have the href attribute
-    Container // Bootstrap container to move everything to the middle
+    Container, // Bootstrap container to move everything to the middle
 } from 'reactstrap';
+
 
 class AppNavbar extends Component {
     state = {
             isOpen: false
         }
-
-    
 
     toggle = () => {
         this.setState({
@@ -26,14 +25,15 @@ class AppNavbar extends Component {
     render() {
         return(
             <div>
-                <Navbar color="primary" dark expand="sm" className="mb-5">
+                <Navbar color="success" dark expand="sm" className="mb-5">
                     <Container>
-                        <NavbarBrand href="/">Smart Shop Basket</NavbarBrand>
+                        <NavbarBrand href="/">Logo goes here
+                        </NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="https://github.com/jflores353">
+                                    <NavLink href="https://github.com/jflores353/smart-shop-app">
                                         Github
                                     </NavLink>
                                 </NavItem>  

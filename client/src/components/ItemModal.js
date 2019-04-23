@@ -57,7 +57,7 @@ class ItemModal extends Component {
                     toggle={this.toggle}
                 >
                   <ModalHeader toggle={this.toggle}>Add to List</ModalHeader> 
-                  <ModalBody>
+                  <ModalBody >
                       <Form onSubmit= {this.onSubmit}>
                         <FormGroup>
                             <Label for="item">Item</Label>
