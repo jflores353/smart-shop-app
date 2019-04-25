@@ -12,7 +12,7 @@ import {
     Nav
 } from 'reactstrap';
 
-// import { GoogleLoginButton } from 'react-social-login-buttons';
+import { GoogleLoginButton } from 'react-social-login-buttons';
 
 class Login extends Component {
     render(){
@@ -46,7 +46,7 @@ class Login extends Component {
                 <div className="text-centered pt-3">
                     Login with your Google account instead
                 </div>
-                {/* <GoogleLoginButton className="mt-3 mb-3"/> */}
+                <GoogleLoginButton className="mt-3 mb-3"/>
                 <div className="text-center">
                     <a href="/sign-up">Sign up</a>
                     <span className="p-2">|</span>
