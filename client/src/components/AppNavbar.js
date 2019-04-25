@@ -7,7 +7,7 @@ import {
     Nav, // Wraps around all the links
     NavItem, // Wraps the NavLink
     NavLink, // Will have the href attribute
-    Container, // Bootstrap container to move everything to the middle
+    Container // Bootstrap container to move everything to the middle
 } from 'reactstrap';
 
 
@@ -27,7 +27,8 @@ class AppNavbar extends Component {
             <div>
                 <Navbar color="success" dark expand="sm" className="mb-5">
                     <Container>
-                        <NavbarBrand href="/">Logo goes here
+                        <NavbarBrand href="/" >
+                            <img src="./logo.png" alt="logo-img" className="my-logo"/>
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
@@ -35,6 +36,11 @@ class AppNavbar extends Component {
                                 <NavItem>
                                     <NavLink href="https://github.com/jflores353/smart-shop-app">
                                         Github
+                                    </NavLink>
+                                </NavItem>  
+                                <NavItem>
+                                    <NavLink href="/">
+                                        Login
                                     </NavLink>
                                 </NavItem>  
                             </Nav>
