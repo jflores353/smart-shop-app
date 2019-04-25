@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Container, ListGroup, ListGroupItem, Button, Row } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getItems, deleteItem }from '../actions/itemActions';
@@ -17,26 +17,29 @@ class ShoppingList extends Component {
     }
    
     render(){
-        const { items } =this.props.item; // This is where our state lives currently
+        const { items } =this.props.item; 
         return(
             <Container>
                 <ItemModal />
                 <ListGroup>
-                    <TransitionGroup className="shopping-list">
-                        {items.map(({ _id, name }) => (
-                            <CSSTransition key={_id} timeout={500} classNames="fade">
-                                <ListGroupItem>
-                                    <Button
-                                        className="remove-btn"
-                                        color="danger"
-                                        size="sm"
-                                        onClick={this.onDeleteClick.bind(this, _id)}
-                                    >&times;
-                                    </Button>
-                                    {name}
-                                </ListGroupItem>
-                            </CSSTransition>
-                        ))}
+                    <TransitionGroup className="shopping-list" style={{ marginLeft: '1rem', marginRight: '1rem'}}>
+                        <Row className= "row-content">
+                            {items.map(({ _id, name }) => (
+                                
+                                <CSSTransition key={_id} timeout={500} classNames="fade">
+                                    <ListGroupItem>
+                                        <Button
+                                            className="remove-btn"
+                                            color="danger"
+                                            size="sm"
+                                            onClick={this.onDeleteClick.bind(this, _id)}
+                                        >&times;
+                                        </Button>
+                                        {name}
+                                    </ListGroupItem>
+                                </CSSTransition> 
+                            ))}
+                        </Row>
                     </TransitionGroup>
                 </ListGroup>
             </Container>
