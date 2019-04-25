@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
+// import { Link } from 'react-router-dom';
 
 import {
     Button,
     Form,
     FormGroup,
     Label,
-    Input
+    Input,
+    NavLink,
+    NavItem,
+    Nav
 } from 'reactstrap';
 
-import { GoogleLoginButton } from 'react-social-login-buttons';
+// import { GoogleLoginButton } from 'react-social-login-buttons';
 
 class Login extends Component {
     render(){
         return (
             <Form className="login-form">
                 <h1>
-                    <span className="font-weight-bold">Sign in to Your Smart Shop</span>.com
+                    <span className="font-weight-bold">Sign in to Your Smart Shop</span>
                 </h1>
-                <h2 className="text-centered">Welcome</h2>
+                
                 <FormGroup>
                     <Label>Email</Label>
                     <Input type="email" placeholder="Email"/>
@@ -26,13 +30,23 @@ class Login extends Component {
                     <Label>Password</Label>
                     <Input type="password" placeholder="Password"/>
                 </FormGroup>
-                <Button className="btn-lg btn-success btn-block">
-                Log In
+
+                
+                <Button color="success" className="btn-lg btn-block login-btn" >
+                    <Nav>
+                        <NavItem>
+                            <NavLink className="login-btn" href="./ShoppingList">
+                                Log In
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
                 </Button>
+            
+
                 <div className="text-centered pt-3">
                     Login with your Google account instead
                 </div>
-                <GoogleLoginButton className="mt-3 mb-3"/>
+                {/* <GoogleLoginButton className="mt-3 mb-3"/> */}
                 <div className="text-center">
                     <a href="/sign-up">Sign up</a>
                     <span className="p-2">|</span>
