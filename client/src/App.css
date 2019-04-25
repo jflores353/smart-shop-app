@@ -27,3 +27,14 @@
     margin: auto;
     height: 100%;
 }
+
+.my-logo {
+    height: 50px;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
