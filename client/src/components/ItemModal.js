@@ -56,8 +56,11 @@ class ItemModal extends Component {
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                 >
-                  <ModalHeader toggle={this.toggle}>Add to List</ModalHeader> 
-                  <ModalBody >
+                    <ModalHeader toggle={this.toggle}>
+                    Add to List
+                    </ModalHeader> 
+                    
+                    <ModalBody >
                       <Form onSubmit= {this.onSubmit}>
                         <FormGroup>
                             <Label for="item">Item</Label>
@@ -75,7 +78,7 @@ class ItemModal extends Component {
                             </Button>
                         </FormGroup>
                       </Form>
-                      </ModalBody> 
+                    </ModalBody> 
                 </Modal>
             </div>
         );
