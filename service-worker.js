@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/smart-shop-app/precache-manifest.b6d437a6144b888de0b8419b565ce465.js"
+  "/smart-shop-app/precache-manifest.e98349a5205654008562d8a8d8bb4fef.js"
 );
 
 workbox.clientsClaim();
