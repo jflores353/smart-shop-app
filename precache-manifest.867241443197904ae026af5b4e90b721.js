@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "65557a8d83bc1946874f",
+    "revision": "5d1723684a1c18525d0b",
     "url": "/smart-shop-app/static/css/main.fa4a1fde.chunk.css"
   },
   {
-    "revision": "65557a8d83bc1946874f",
-    "url": "/smart-shop-app/static/js/main.d613de8d.chunk.js"
+    "revision": "5d1723684a1c18525d0b",
+    "url": "/smart-shop-app/static/js/main.1248dc84.chunk.js"
   },
   {
     "revision": "37ad1344386db7303d7b",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/smart-shop-app/static/js/2.c0882448.chunk.js"
   },
   {
-    "revision": "f78e784b249547c21c9ebe361ffec56e",
+    "revision": "ab35337bf592c0b74f96a292d8e15302",
     "url": "/smart-shop-app/index.html"
   }
 ];
