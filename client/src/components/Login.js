@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import {
     Button,
@@ -35,9 +35,9 @@ class Login extends Component {
                 <Button color="success" className="btn-lg btn-block login-btn" >
                     <Nav>
                         <NavItem>
-                            <NavLink className="login-btn" href="./ShoppingList">
+                            <Link className="login-btn nav-link" to="./ShoppingList">
                                 Log In
-                            </NavLink>
+                            </Link>
                         </NavItem>
                     </Nav>
                 </Button>

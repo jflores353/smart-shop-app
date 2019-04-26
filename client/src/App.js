@@ -16,7 +16,7 @@ import './App.css';
 class App extends Component {
   render() {
     return ( 
-      <BrowserRouter>
+      <BrowserRouter basename={`/${process.env.REACT_APP_BASENAME}`}>
         <Provider store = {store}>
           <div className="App">
           <AppNavbar />
