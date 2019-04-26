@@ -1,0 +1,38 @@
+{
+  "name": "longevity-app",
+  "version": "1.0.0",
+  "description": "Longevity app built with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "dotenv -- concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jflores353/longevity-app.git"
+  },
+  "author": "Gabe Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jflores353/longevity-app/issues"
+  },
+  "homepage": "https://github.com/jflores353/longevity-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "dotenv-cli": "^2.0.0",
+    "express": "^4.16.4",
+    "firebase": "^5.10.0",
+    "google-maps-react": "^2.0.2",
+    "mongoose": "^5.5.2",
+    "react": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-social-login-buttons": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}

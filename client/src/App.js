@@ -22,10 +22,12 @@ class App extends Component {
           <AppNavbar />
             <Route path="/" exact component={Login} />
             <Route path="/ShoppingList/" component={ShoppingList} />
-          {/* <Maps /> */}
+            {/* <Maps /> */}
+            
           </div>
         </Provider>
       </BrowserRouter>
+      
     );
   }
 }
