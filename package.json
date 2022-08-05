@@ -29,7 +29,7 @@
     "firebase": "^5.10.0",
     "gh-pages": "^2.0.1",
     "google-maps-react": "^2.0.2",
-    "mongoose": "^5.5.2",
+    "mongoose": "^5.7.5",
     "react": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-social-login-buttons": "^2.3.1"
